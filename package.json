@@ -1,0 +1,18 @@
+{
+  "name": "cursorworkspace",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node scripts/with-playwright-env.cjs test",
+    "test:ui": "node scripts/with-playwright-env.cjs test --ui",
+    "test:chromium": "node scripts/with-playwright-env.cjs test --project=chromium",
+    "test:login": "node scripts/with-playwright-env.cjs test tests/login.spec.ts --project=chromium",
+    "report": "node scripts/with-playwright-env.cjs show-report"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.59.0",
+    "@types/node": "^25.5.0",
+    "dotenv": "^17.3.1"
+  }
+}
